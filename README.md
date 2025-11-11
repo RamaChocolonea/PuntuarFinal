@@ -1,89 +1,59 @@
-# ⭐Puntu.ar: Configuración de entorno local
+# Frontend
 
-## Requisitos Previos
-Antes de comenzar tener instalado lo siguiente:
-- Docker: [Instalar Docker](https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe?utm_source=docker&utm_medium=webreferral&utm_campaign=dd-smartbutton&utm_location=module)
-- Git: [Instalar Git](https://github.com/git-for-windows/git/releases/download/v2.49.0.windows.1/Git-2.49.0-64-bit.exe)
-- Node: [Instalar Node](https://nodejs.org/dist/v22.14.0/node-v22.14.0-x64.msi)
-- Angular: 
-```bash
-npm install -g @angular/cli
-```
+This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.6.
 
-## Configuración del Proyecto
+## Development server
 
-### Paso 1: Clonar repositorio
-1. Clonar:
-```bash
-git clone https://github.com/GonzaCrespin/Puntu.ar
-cd Puntu.ar
-```
-### Paso 2: Configurar entorno
-2. Copiar .env:
-```bash
-cp .env.example .env
-```
-*Para obtener una credeencial de API de TMDB, [registrarse](https://www.themoviedb.org/signup?language=es)*
-![alt text](image-1.png)
+To start a local development server, run:
 
-3. Configurar .env con tus credenciales.
-### Paso 3: Configurar frontend
-4.  Instalar las dependencias del frontend:
-```bash
-cd frontend
-npm install
-```
-5. Como levantar el frontend:
 ```bash
 ng serve
 ```
-### Paso 4: Construir docker de la DB
-6. Buildear y levantar el docker
+
+Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+
+## Code scaffolding
+
+Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+
 ```bash
-cd ../docker
-docker-compose up -d
-```
-### Paso 5: Configurar backend.
-7. Instalar las dependencias del frontend:
-```bash
-cd ../backend
-npm install
-```
-8. Como levantar el backend:
-```bash
-npm run dev
+ng generate component component-name
 ```
 
-## Probar el entorno completo
-1. Levantar todo completo:
-```bash
-start.bat
-```
-**Si es necesario modificar el archivo para levantar lo que desee.**
+For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
 
-## Como hacer cambios?
-1. Asegurate de tener la version más actualizada:
-Cambia a la rama principal:
 ```bash
-git checkout main
+ng generate --help
 ```
 
-Obtiene los cambios mas recientes:
+## Building
+
+To build the project run:
+
 ```bash
-git pull origin main
+ng build
 ```
 
-2. Crear una rama para nuevos cambios:
+This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+
+## Running unit tests
+
+To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+
 ```bash
-git checkout -b nombre-de-la-rama
+ng test
 ```
 
-3. Hacer tus cambios y probarlos localmente.
-4. Subirlos:
+## Running end-to-end tests
+
+For end-to-end (e2e) testing, run:
+
 ```bash
-git add .
-git commit -m "Descripción clara del cambio"
-git push origin nombre-de-tu-rama
+ng e2e
 ```
-5. Pulsar aqui para crear un pull request con alguna descripcion adicional del cambio **(Opcional)**
-![alt text](image.png)
+
+Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+
+## Additional Resources
+
+For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
