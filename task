@@ -1,0 +1,50 @@
+---------------------------------------------------------------------------------------Backend---------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------Frontend---------------------------------------------------------------------------------------
+- Modelo de review en front (modelo y service) [X]
+- Continuar review nueva, falta modelar quien lo ve y el add en el ts [X]
+- Vista de reviews ordenadas de mas nuevas a viejas [X]
+
+---------------------------------------------------------------------------------------Roadmap---------------------------------------------------------------------------------------
+- Agregar limite de reviews para mostrar en vistas [X]
+- Agregar me gusta y comentarios en reviews [X]
+- Editar Perfil [X]
+- Agregar vista de escribir un comentario [X]
+- Agregar vista de los comentarios [X]
+- Editar 4 Favoritos en perfil [X]
+- Agregar al logo redireccion al Inicio [X]
+- Agregar amigos, etc [X]
+- Diseñar section Network [X]
+- Ir al perfil de la persona del Review [X]
+- Me gustas en Reviews cuando presiono me va directo al detalle [X]
+- Agregar ir a en providers [X]
+- Likes estilo [X]
+- Arreglar seccion "Solicitudes" en Network [] (la idea es ver si se pueden incluir algo como notificaciones)
+- Olvide mi contraseña []
+- Arreglar banderas en register []
+
+- Agregar para review eliminar [X]
+- Hacer que sea imposible editar el username [X]
+- Hacer mas claro username, name y bio [X]
+- Limite de edad (13 años) [X]
+- Edad (años) [X]
+- Agregar ir a providers en peliculas [X]
+- Limite de caracteres en titulo (50) y descripcion (2000) en review. [X]
+- Actualizar seguir [X]
+- Agegar ver favoritos de otra persona, vistos [X]
+- Calificacion de review actualize la calificacion de la media [X]
+- Hacer que se entienda mas el boton de spoiler [X]
+- Arreglar get de review segun privacidad [X]
+- Agregar lupita en Network [X]
+- Arreglar provider default (tarjeta default) []
+- Repo a parte []
+
+- Like al comentario de comentario []
+
+Anotaciones:
+-Iniciar backend
+npm run dev
+
+-Iniciar frontend
+ng serve
